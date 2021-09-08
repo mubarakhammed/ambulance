@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_centerInParent="true">
+
+
+        <RelativeLayout
+            android:layout_width="250dp"
+            android:layout_height="280dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/curve_thin_black">
+
+
+
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:id="@+id/back"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="25dp"
+                android:background="@drawable/curve_black"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:textAllCaps="false"
+               android:textSize="18dp"
+                android:text="Okay.."
+                android:textColor="@color/yellow"
+                android:textStyle="bold"/>
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your dispatcher Id is shown below. Keep it safe!"
+            android:layout_marginRight="20dp"
+            android:id="@+id/titletext"
+            android:layout_below="@+id/status"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/nunitosansregular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:layout_below="@+id/titletext"
+            android:layout_marginTop="10dp"
+            android:id="@+id/tag1"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"/>
+
+
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/smiley_correct" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

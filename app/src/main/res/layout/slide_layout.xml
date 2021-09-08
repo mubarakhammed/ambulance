@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:orientation="vertical" android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/slideImage"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"/>
+    <TextView
+        android:id="@+id/slideHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/yellow"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/nunitosansbold"
+        android:layout_marginLeft="30dp"
+        />
+    <TextView
+        android:id="@+id/slideDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/yellow"
+        android:fontFamily="@font/nunitosansregular"
+        />
+
+    <!-- <ImageView
+         android:id="@+id/slideImageView"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentTop="true"
+         android:layout_centerHorizontal="true"
+         android:layout_marginStart="125dp"
+         android:layout_marginTop="97dp"
+         app:srcCompat="@drawable/group_10" />
+
+     <TextView
+         android:id="@+id/slideHeading"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/slideImageView"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="15dp"
+         android:layout_centerInParent="true"
+         android:text="HEADING"
+         android:gravity="center"
+         android:textColor="@color/white"
+         android:textSize="20sp"
+         android:textStyle="bold" />
+
+     <TextView
+         android:id="@+id/slideDescription"
+         android:layout_width="match_parent"
+         android:layout_height="294dp"
+         android:layout_below="@id/slideHeading"
+         android:layout_alignParentStart="true"
+         android:layout_alignParentBottom="true"
+         android:layout_marginStart="0dp"
+         android:layout_marginTop="20dp"
+         android:layout_marginBottom="122dp"
+         android:gravity="center"
+         android:padding="25dp"
+         android:text="TextView"
+         android:textColor="@color/transsparentwhite" />-->
+</LinearLayout>

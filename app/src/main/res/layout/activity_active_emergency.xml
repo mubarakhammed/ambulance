@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".agent.ActiveEmergency">
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activeRefresh">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Emergencies "
+                android:fontFamily="@font/montserrat_bold"
+                android:textSize="17sp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/just_loading1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                app:lottie_fileName="loading.json"
+                android:layout_marginTop="100dp"
+                app:lottie_autoPlay="true"
+                android:visibility="gone"
+                app:lottie_loop="true"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/active_recycler"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

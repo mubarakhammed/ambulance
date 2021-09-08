@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".user.ui.home.HomeFragment">
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      >
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="vertical">
+
+
+          <TextView
+              android:id="@+id/location"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="15sp"
+              android:paddingTop="5dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="5dp"
+              android:paddingLeft="10dp"
+              android:drawableLeft="@drawable/ic_person_pin_circle_black_24dp"
+              android:drawablePadding="10dp"
+              android:fontFamily="@font/nunitosansregular"
+              android:background="@drawable/curve_thin_black"
+              android:textSize="13sp"
+              android:text="Nigeria"
+              android:textColor="@color/black" />
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="0.5dp"
+              android:layout_marginLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_marginTop="20dp"
+              android:background="@color/black"/>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Hello,"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              android:fontFamily="@font/montserrat_bold"
+              android:textColor="@color/yellow"
+              android:textSize="20dp"/>
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Supply your emergency!"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:layout_marginTop="10dp"
+              android:textSize="20dp"
+              android:textColor="@color/black"
+              android:fontFamily="@font/montserrat_bold"/>
+
+          <TextView
+              android:id="@+id/textView9"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:text="Tap below box and select emergency type"
+              android:fontFamily="@font/nunitosansregular"
+              android:textSize="15sp"
+              android:textColor="@color/black"
+             />
+
+
+          <LinearLayout
+              android:id="@+id/linearLayout5"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:orientation="vertical"
+              android:layout_marginTop="10dp"
+              app:layout_constraintEnd_toEndOf="parent"
+              app:layout_constraintHorizontal_bias="0.014"
+              app:layout_constraintStart_toStartOf="parent"
+              app:layout_constraintTop_toBottomOf="@+id/textView9">
+
+              <Spinner
+                  android:id="@+id/caseSpinner"
+                  android:layout_width="200dp"
+                  android:layout_height="50dp"
+                  android:background="@drawable/curve_thin_black" />
+          </LinearLayout>
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:text="Number of victims"
+              android:fontFamily="@font/nunitosansregular"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <EditText
+              android:id="@+id/number_of_victms"
+              android:layout_width="200dp"
+              android:layout_height="50dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/curve_thin_black"
+              android:hint="How many"
+              android:paddingLeft="10dp"
+              android:textSize="15sp"
+              android:fontFamily="@font/nunitosansregular"
+              android:textColor="@color/black"
+              android:inputType="number"/>
+
+          <TextView
+
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="20dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+              android:text="Input you phone number"
+              android:fontFamily="@font/nunitosansregular"
+              android:textSize="15sp"
+              android:textColor="@color/black"/>
+
+          <EditText
+              android:id="@+id/phoneNumber"
+              android:layout_width="200dp"
+              android:layout_height="50dp"
+              android:layout_marginLeft="20dp"
+              android:layout_marginTop="10dp"
+              android:background="@drawable/curve_thin_black"
+              android:hint="Your number"
+              android:paddingLeft="10dp"
+              android:textSize="15sp"
+              android:fontFamily="@font/nunitosansregular"
+              android:textColor="@color/black"
+              android:inputType="phone"/>
+
+          <androidx.cardview.widget.CardView
+              android:layout_width="150dp"
+              android:layout_height="70dp"
+              android:layout_gravity="center"
+              app:cardBackgroundColor="@color/white"
+              app:cardElevation="8dp"
+              app:cardCornerRadius="200dp"
+              android:layout_marginTop="30dp"
+              android:layout_marginBottom="100dp">
+              <LinearLayout
+                  android:id="@+id/alert"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+                  <com.airbnb.lottie.LottieAnimationView
+                      android:id="@+id/animationView2"
+                      android:layout_width="match_parent"
+                      android:layout_height="70dp"
+                     android:layout_gravity="center"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      app:layout_constraintEnd_toEndOf="parent"
+                      app:layout_constraintStart_toStartOf="parent"
+                      app:layout_constraintTop_toTopOf="parent"
+                      app:lottie_autoPlay="true"
+                      app:lottie_fileName="emergency.json"
+                      app:lottie_loop="true" />
+
+              </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+      </LinearLayout>
+  </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

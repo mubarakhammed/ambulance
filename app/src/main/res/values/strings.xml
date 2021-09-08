@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ADS</string>
+    <string name="title_activity_user_main">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="google_maps_key">AIzaSyCX8mrjNKiQEKTtIB1839gIS8pp1510jtg</string>
+
+
+    <string name="stored_email">ads.email</string>
+    <string name="stored_password">ads.password</string>
+</resources>
